@@ -1,0 +1,19 @@
+Hello everyone,
+
+On the websites below you find Lidar data from the Netherlands. Its called ¡°Actueel Hoogtebestand Nederland¡±. It was collected during 3 periods.
+
+AHN1: 1996 ¨C 2003
+AHN2: 2007 ¨C 2012
+AHN3: 2014 ¨C 2019
+
+The data is available in different resolutions and free downloadable.
+
+AHN1: 100, 25 and 5 meter maaiveldraster (surfaceraster) and a ¡°puntenwolk¡± pointcloud
+AHN2 and 3 are available in 0.5 and 5 meter maaiveldraster (surfaceraster) and a pointcloud
+
+Download:
+AHN 1 and 2:
+https://www.pdok.nl/nl/producten/pdok-downloads/atomfeeds
+
+AHN3:
+https://www.arcgis.com/home/webmap/viewer.html?useExisting=1&layers=9039d4ec38ed444587c46f8689f0435e
