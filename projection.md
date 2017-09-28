@@ -47,7 +47,7 @@ Earth Engine公共数据目录中的所有数据都存储在原始地图投影�
 
 我们一直在研究全球数据，但让我们看看当我们放大美国大陆时会发生什么。首先让我们回到这个土地覆盖数据集的原始正弦投影:
 
-![MCD12Q1土地覆盖数据集为2012年，在其原生正弦图投影](https://github.com/dadream/dadream.github.io/blob/master/images/proj-p1/1-_fjb4wRGFZqs2FvPkYKZIg?raw=true)
+![MCD12Q1土地覆盖数据集为2012年，在其原生正弦图投影](https://github.com/dadream/dadream.github.io/blob/master/images/proj-p1/1-_fjb4wRGFZqs2FvPkYKZIg.png?raw=true)
 
 *美国大陆在这片土地上覆盖着数据的原始正弦投影*
 
