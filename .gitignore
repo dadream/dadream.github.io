@@ -6,3 +6,4 @@
 *.suo
 *.config
 *.json
+*.sqlite-journal
