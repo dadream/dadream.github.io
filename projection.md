@@ -23,15 +23,15 @@ function(){
 
 首先让我们在它的本地映射投影中查看这个数据集:
 
-![MCD12Q1土地覆盖数据集为2012年，在其原生正弦图投影](https://github.com/dadream/dadream.github.io/blob/master/images/proj-p1/1-INsryu_6JOFCf_Q9XXyO2Q.png?raw=true)
+![MCD12Q1土地覆盖数据集为2012年，在原生正弦图投影](https://github.com/dadream/dadream.github.io/blob/master/images/proj-p1/1-INsryu_6JOFCf_Q9XXyO2Q.png?raw=true)
 
-*MCD12Q1土地覆盖数据集为2012年，在其原生正弦图投影*
+*MCD12Q1土地覆盖数据集为2012年，在原生正弦图投影*
 
 该数据使用[sinusoidal projection](https://en.wikipedia.org/wiki/Sinusoidal_projection)正弦投影，这是一个等面积投影的例子:每个像素对应于地球表面上的一个大小相等的区域。出于这个原因，并由于其简单的数学形式，美国航天局在这一预测中制作并分发了其许多全球数据集(海洋中的方块代表这个特定数据集中的无数据区域)。
 
 Earth Engine公共数据目录中的所有数据都存储在原始地图投影中，在这种情况下是正弦投影。但是，您可以很容易地将数据重新采样到其他投影中进行分析或可视化。让我们来看看该数据在另一个常见的投影的显示方式，[equiectangular projection](https://en.wikipedia.org/wiki/Equirectangular_projection):
 
-![MCD12Q1土地覆盖数据集为2012年，在其原生正弦图投影](https://github.com/dadream/dadream.github.io/blob/master/images/proj-p1/1-D_CIloak6MfyjqkaV50wTw.png?raw=true)
+![MCD12Q1土地覆盖数据集为2012年，在等角投影](https://github.com/dadream/dadream.github.io/blob/master/images/proj-p1/1-D_CIloak6MfyjqkaV50wTw.png?raw=true)
 
 *equirectangular projection，具有与纬度和经度相对应的坐标*
 
@@ -39,9 +39,11 @@ Earth Engine公共数据目录中的所有数据都存储在原始地图投影�
 
 为了补偿两极附近的这种变形，你可能倾向于垂直拉伸这些区域。如果你这样做，然后你得到另一个著名的地图投影，它可以保留局部形状和角度，虽然它当然不保留面积。这是[墨卡托投影](https://en.wikipedia.org/wiki/Mercator_projection):
 
-![MCD12Q1土地覆盖数据集为2012年，在其原生正弦图投影](https://github.com/dadream/dadream.github.io/blob/master/images/proj-p1/1-C_vYU9QOdFhWfbOtvk-iqw.png?raw=true)
+<div align=center>
+![MCD12Q1土地覆盖数据集为2012年，在墨卡托投影](https://github.com/dadream/dadream.github.io/blob/master/images/proj-p1/1-C_vYU9QOdFhWfbOtvk-iqw.png?raw=true)
+</div>
 
-*熟悉的墨卡托投影，常用于网上地图*
+<center>*熟悉的墨卡托投影，常用于网上地图*</center>
 
 这种投影从根本上扭曲了陆地的相对面积，使离赤道更远的地区看起来比实际的大得多。例如，它使格陵兰的规模与非洲的规模相当，实际上它只有澳大利亚的三分之一！墨卡托投影有它的优点，但我们很快就会看到其中之一。
 
