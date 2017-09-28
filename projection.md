@@ -41,7 +41,7 @@ Earth Engine公共数据目录中的所有数据都存储在原始地图投影�
 
 ![MCD12Q1土地覆盖数据集为2012年，在墨卡托投影](https://github.com/dadream/dadream.github.io/blob/master/images/proj-p1/1-C_vYU9QOdFhWfbOtvk-iqw.png?raw=true)
 
-<center>*熟悉的墨卡托投影，常用于网上地图*</center>
+*熟悉的墨卡托投影，常用于网上地图*
 
 这种投影从根本上扭曲了陆地的相对面积，使离赤道更远的地区看起来比实际的大得多。例如，它使格陵兰的规模与非洲的规模相当，实际上它只有澳大利亚的三分之一！墨卡托投影有它的优点，但我们很快就会看到其中之一。
 
