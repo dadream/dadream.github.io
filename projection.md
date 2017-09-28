@@ -19,7 +19,7 @@ function(){
 
 地球是圆的，但你的电脑屏幕是平的。地图投影描述了平面上的点，如屏幕上的像素，对应于地球表面上的点。
 
-让我们来探讨一下，这是如何使用一个被称为[MCD12Q1](https://lpdaac.usgs.gov/dataset_discovery/modis/modis_products_table/mcd12q1)的全球土地覆盖数据集，这是用美国宇航局的MODIS卫星仪器的数据制作的许多标准数据产品之一。这个数据集很容易在Googl Eearth Engine中提供，一个用于地理空间数据分析的云平台，如果您喜欢，您可以跟随github上的这个简单的脚本来查看我如何制作本文中的所有图像。
+让我们来探讨一下，这是如何使用一个被称为[MCD12Q1](https://lpdaac.usgs.gov/dataset_discovery/modis/modis_products_table/mcd12q1)的全球土地覆盖数据集，这是用美国宇航局的[MODIS](https://en.wikipedia.org/wiki/Moderate-resolution_imaging_spectroradiometer)卫星仪器的数据制作的许多标准数据产品之一。这个数据集很容易在[Google Earth Engine](http://earthengine.google.com/)中提供，一个用于地理空间数据分析的云平台，如果您喜欢，您可以跟随[GitHub](https://github.com/mdhancher/mdh-examples/blob/master/earth-engine/intro-projections-1.js)上的这个简单的脚本来查看我如何制作本文中的所有图像。
 
 首先让我们在它的本地映射投影中查看这个数据集:
 
@@ -27,9 +27,9 @@ function(){
 
 *MCD12Q1土地覆盖数据集为2012年，在其原生正弦图投影*
 
-该数据使用正弦投影，这是一个等面积投影的例子:每个像素对应于地球表面上的一个大小相等的区域。出于这个原因，并由于其简单的数学形式，美国航天局在这一预测中制作并分发了其许多全球数据集(海洋中的方块代表这个特定数据集中的无数据区域)。
+该数据使用[sinusoidal projection](https://en.wikipedia.org/wiki/Sinusoidal_projection)正弦投影，这是一个等面积投影的例子:每个像素对应于地球表面上的一个大小相等的区域。出于这个原因，并由于其简单的数学形式，美国航天局在这一预测中制作并分发了其许多全球数据集(海洋中的方块代表这个特定数据集中的无数据区域)。
 
-Earth Engine公共数据目录中的所有数据都存储在原始地图投影中，在这种情况下是正弦投影。但是，您可以很容易地将数据重新采样到其他投影中进行分析或可视化。让我们来看看该数据在另一个常见的投影的显示方式，equiectangular projection:
+Earth Engine公共数据目录中的所有数据都存储在原始地图投影中，在这种情况下是正弦投影。但是，您可以很容易地将数据重新采样到其他投影中进行分析或可视化。让我们来看看该数据在另一个常见的投影的显示方式，[equiectangular projection](https://en.wikipedia.org/wiki/Equirectangular_projection):
 
 ![MCD12Q1土地覆盖数据集为2012年，在其原生正弦图投影](https://github.com/dadream/dadream.github.io/blob/master/images/proj-p1/1-D_CIloak6MfyjqkaV50wTw.png?raw=true)
 
@@ -37,7 +37,7 @@ Earth Engine公共数据目录中的所有数据都存储在原始地图投影�
 
 这种投影，有时也称为plate carrée，是常用的，因为数学特别简单:轴直接对应于纬度和经度。然而，注意到极点附近的区域出现横向伸展。这种投影不保留形状或区域。没有完美的方法来摆平一个球体，所以人们在这些年里创造了许多不同的地图投影，每一个都做出不同的妥协，适合不同的用途。
 
-为了补偿两极附近的这种变形，你可能倾向于垂直拉伸这些区域。如果你这样做，然后你得到另一个著名的地图投影，它可以保留局部形状和角度，虽然它当然不保留面积。这是墨卡托投影:
+为了补偿两极附近的这种变形，你可能倾向于垂直拉伸这些区域。如果你这样做，然后你得到另一个著名的地图投影，它可以保留局部形状和角度，虽然它当然不保留面积。这是[墨卡托投影](https://en.wikipedia.org/wiki/Mercator_projection):
 
 ![MCD12Q1土地覆盖数据集为2012年，在其原生正弦图投影](https://github.com/dadream/dadream.github.io/blob/master/images/proj-p1/1-C_vYU9QOdFhWfbOtvk-iqw.png?raw=true)
 
