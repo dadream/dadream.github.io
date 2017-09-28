@@ -39,9 +39,7 @@ Earth Engine公共数据目录中的所有数据都存储在原始地图投影�
 
 为了补偿两极附近的这种变形，你可能倾向于垂直拉伸这些区域。如果你这样做，然后你得到另一个著名的地图投影，它可以保留局部形状和角度，虽然它当然不保留面积。这是[墨卡托投影](https://en.wikipedia.org/wiki/Mercator_projection):
 
-<div align=center>
 ![MCD12Q1土地覆盖数据集为2012年，在墨卡托投影](https://github.com/dadream/dadream.github.io/blob/master/images/proj-p1/1-C_vYU9QOdFhWfbOtvk-iqw.png?raw=true)
-</div>
 
 <center>*熟悉的墨卡托投影，常用于网上地图*</center>
 
